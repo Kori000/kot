@@ -1,25 +1,39 @@
 # Kot
 
-## Installation
+## Getting started
+
+```bash
+# clone the project
+git clone https://github.com/Kori000/Kot.git
+
+# enter the project directory
+cd Kot
+
+# install dependency
+yarn
+
+# develop
+yarn dev
+```
 
 ## Feature
 
-1. 网站 指定 icon + safari 浏览器最近浏览区的 指定 icon
-2. 集成 tailwindcss
-3. 已创建 context 上下文提供简单的全局状态管理
-4. 已创建 utils, 内置简单工具:
+1. The designated icon of the website + the designated icon of the recent browsing area of the safari browser
+2. Integrated tailwindcss
+3. The created context context provides simple global state management
+4. Utils has been created with simple tools built in:
 
-   - 监听视口宽度
+   - Monitor viewport size
 
-   - 判断是否为 Safari 浏览器
+   - Check whether the browser is Safari
 
-   - 判断网络是否为中文
+   - Determine whether the network is China
 
-   - 回到顶部
+   - Back To Top
 
-   - 格式化地址
+   - Format the blockchain address
 
-5. 已创建 BANPage 页面: 提示当前区域不支持访问
-6. 已配置默认字体和 tailwindcss 基础配置
-7. 已集成路由
-8. 已配置 viteconfig
+5. Created BANPage: A message is displayed indicating that the current region is not accessible
+6. The default font and basic configuration of tailwindcss have been configured
+7. Integrated route
+8. The viteconfig has been configured
