@@ -1,5 +1,7 @@
 # Kot
 
+👀 [中文文档](https://github.com/Kori000/Kot/blob/main/README_Zh.md)
+
 ## Getting started
 
 ```bash

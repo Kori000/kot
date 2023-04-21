@@ -1,5 +1,7 @@
 # Kot
 
+🌏 [English](https://github.com/Kori000/Kot/blob/main/README.md)
+
 ## 快速开始
 
 ```bash
