@@ -1,14 +1,8 @@
 import React from 'react';
-import useKot, { KotProvider } from '../context/useKot';
-import Header from '../components/Header';
+
+import Home from '../components/Home';
 const MainPage = () => {
-  const { hellow } = useKot();
-  console.log(hellow);
-  return (
-    <KotProvider>
-      <Header></Header>
-    </KotProvider>
-  );
+  return <Home></Home>;
 };
 
 export default MainPage;
