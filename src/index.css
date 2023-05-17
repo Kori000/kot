@@ -1,20 +1,5 @@
 @tailwind base;
 
-@layer base {
-
-  /* 英文标题 */
-  @font-face {
-    font-family: "AXSA";
-    src: url(./assets/font/AXSARegular.otf);
-  }
-
-  /* 英文正文 */
-  @font-face {
-    font-family: "Avoidance";
-    src: url(./assets/font/AvoidanceGenevra.ttf);
-  }
-}
-
 @tailwind components;
 @tailwind utilities;
 

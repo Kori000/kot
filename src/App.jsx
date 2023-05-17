@@ -3,11 +3,17 @@ import React, { useState, useEffect } from 'react';
 import Routes from './routes';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BrowserRouter } from 'react-router-dom';
+import { ConfigProvider } from 'antd';
+import { StyleProvider } from '@ant-design/cssinjs';
 const App = () => {
   return (
     <BrowserRouter>
       <AnimatePresence mode='wait'>
-        <Routes></Routes>
+        <ConfigProvider>
+          <StyleProvider hashPriority='high'>
+            <Routes></Routes>
+          </StyleProvider>
+        </ConfigProvider>
       </AnimatePresence>
     </BrowserRouter>
   );
