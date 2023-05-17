@@ -15,7 +15,44 @@ const Home = () => {
         className='w-[10%]'
       />
       <p>{t('hellow')}~ Kot-React</p>
-
+      <div className='flex items-center justify-center gap-5 '>
+        <Button
+          type='primary'
+          onClick={() => {
+            i18n.changeLanguage('zh');
+          }}
+        >
+          中文
+        </Button>
+        <Button
+          type='primary'
+          onClick={() => {
+            i18n.changeLanguage('en');
+          }}
+        >
+          English
+        </Button>
+        <Button
+          type='primary'
+          onClick={() => {
+            i18n.changeLanguage('ko');
+          }}
+        >
+          한국인
+        </Button>
+        <Button
+          type='primary'
+          onClick={() => {
+            i18n.changeLanguage('ja');
+          }}
+        >
+          日本語
+        </Button>
+        {/* <div>中文</div>
+        <div>English</div>
+        <div>한국인</div>
+        <div>日本語</div> */}
+      </div>
       <div className='flex items-center justify-center gap-5 '>
         <button
           type='button'
@@ -36,13 +73,6 @@ const Home = () => {
         >
           +
         </button>
-      </div>
-      <div className='flex items-center justify-center gap-5 '>
-        <Button type='primary'>中文</Button>
-        <div>中文</div>
-        <div>English</div>
-        <div>한국인</div>
-        <div>日本語</div>
       </div>
     </div>
   );
