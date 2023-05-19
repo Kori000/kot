@@ -5,16 +5,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { BrowserRouter } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
 import { StyleProvider } from '@ant-design/cssinjs';
+import { KotProvider } from './context/useKot';
 const App = () => {
   return (
     <BrowserRouter>
-      <AnimatePresence mode='wait'>
-        <ConfigProvider>
-          <StyleProvider hashPriority='high'>
-            <Routes></Routes>
-          </StyleProvider>
-        </ConfigProvider>
-      </AnimatePresence>
+      <KotProvider>
+        <AnimatePresence mode='wait'>
+          <ConfigProvider>
+            <StyleProvider hashPriority='high'>
+              <Routes></Routes>
+            </StyleProvider>
+          </ConfigProvider>
+        </AnimatePresence>
+      </KotProvider>
     </BrowserRouter>
   );
 };

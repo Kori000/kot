@@ -2,7 +2,6 @@ import { useRoutes } from 'react-router-dom';
 import MainPage from '../view/MainPage';
 import Second from '../view/Second';
 import BANPage from '../view/BANPage';
-import useKot, { KotProvider } from '../context/useKot';
 
 const routes = [
   {
@@ -20,7 +19,8 @@ const routes = [
 ];
 
 const Routes = () => {
-  return <KotProvider>{useRoutes(routes)}</KotProvider>;
+  return useRoutes(routes);
+  // return <KotProvider>{useRoutes(routes)}</KotProvider>;
 };
 
 export default Routes;
