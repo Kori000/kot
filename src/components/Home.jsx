@@ -3,10 +3,9 @@ import useKot from '../context/useKot';
 import { ice } from '../assets/image';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'antd';
-import 'antd/dist/reset.css';
 const Home = () => {
   const { t, i18n } = useTranslation();
-  const { number, setNumber } = useKot();
+  const { number, setNumber, goToSecond } = useKot();
   return (
     <div className='w-full h-screen flex justify-center items-center flex-col text-[#fff] text-2xl gap-4 pb-40'>
       <img
@@ -48,10 +47,6 @@ const Home = () => {
         >
           日本語
         </Button>
-        {/* <div>中文</div>
-        <div>English</div>
-        <div>한국인</div>
-        <div>日本語</div> */}
       </div>
       <div className='flex items-center justify-center gap-5 '>
         <button
@@ -74,6 +69,14 @@ const Home = () => {
           +
         </button>
       </div>
+      <Button
+        type='default'
+        onClick={() => {
+          goToSecond();
+        }}
+      >
+        {t('jump')}
+      </Button>
     </div>
   );
 };
