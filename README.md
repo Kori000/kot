@@ -2,6 +2,12 @@
 
 👀 [中文文档](https://github.com/Kori000/Kot/blob/main/README_Zh.md)
 
+<div align="left">
+
+[![npm version](https://img.shields.io/npm/v/kot-remove-i18n.svg?style=flat-square)](https://www.npmjs.org/package/kot-remove-i18n)
+
+</div>
+
 ## Getting started
 
 ```bash
