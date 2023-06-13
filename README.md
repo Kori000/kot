@@ -57,3 +57,9 @@ yarn dev
 ```bash
 yarn remove-i18n
 ```
+
+12. Integrated Redux
+
+- @reduxjs/toolkit
+- react-redux
+- redux
