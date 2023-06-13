@@ -5,8 +5,8 @@ import { Button } from 'antd';
 
 import { useTranslation } from 'react-i18next';
 const Second = () => {
-  const { t, i18n } = useTranslation();
-  const { number, setNumber, goToHome } = useKot();
+  const { t } = useTranslation();
+  const { goToHome } = useKot();
   return (
     <div className='w-full h-screen flex justify-center items-center flex-col text-[#fff] text-2xl gap-4 pb-40'>
       <img

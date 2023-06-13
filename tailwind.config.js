@@ -4,9 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      // 标题
       Inter: ['Inter', 'sans-serif'],
-      // 正文
       Alata: ['Alata', 'sans-serif'],
       Sans: ['sans-serif']
     },

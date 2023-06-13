@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-export default function ChangeSize() {
+function ChangeSize(minheight, minwidth) {
+  if (minheight === undefined || minwidth === undefined) {
+    throw new Error('minheight or minwidth is undefined');
+  }
   const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
@@ -16,7 +19,8 @@ export default function ChangeSize() {
     };
   }, []);
 
-  const isNeedMini = viewportHeight < 840 && viewportWidth >= 1200;
+  const isNeedMini = viewportHeight < minheight && viewportWidth >= minwidth;
 
   return isNeedMini;
 }
+export default ChangeSize;
