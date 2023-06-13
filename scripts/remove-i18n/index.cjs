@@ -6,7 +6,7 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 
-rl.question('确认要执行 remove-i18n 🍉 吗？(y/n) ', (answer) => {
+rl.question('确认要执行 remove-i18n 🍉 吗？此操作不可撤销! (y/n) ', (answer) => {
   if (answer.toLowerCase() === 'y') {
     // 执行 remove-i18n 的操作
     require('./remove-i18n.cjs');
