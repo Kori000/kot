@@ -7,8 +7,7 @@ module.exports = {
       Inter: ['Inter', 'sans-serif'],
       Alata: ['Alata', 'sans-serif'],
       Sans: ['sans-serif']
-    },
-    backgroundImage: {}
+    }
   },
 
   plugins: []
