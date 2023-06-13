@@ -3,7 +3,7 @@ const path = require('path');
 
 const Second_Filepath = path.resolve(__dirname, '../../src/Second.jsx');
 const replace_routes_index_jsx_Filepath = path.resolve(__dirname, './replace/replace_routes_index_jsx.jsx');
-const replace_Home_jsx_Filepath = path.resolve(__dirname, './replace_Home.jsx');
+const replace_Home_jsx_Filepath = path.resolve(__dirname, './replace/replace_Home.jsx');
 
 const routerFilePath = path.resolve(__dirname, '../../src/routes/index.jsx');
 const homeFilePath = path.resolve(__dirname, '../../src/components/Home.jsx');
@@ -15,7 +15,7 @@ function removeSecondFile () {
 
 function replace_route_index_jsx () {
   if (!fs.existsSync(routerFilePath) || !fs.existsSync(replace_routes_index_jsx_Filepath)) return
-  const routerFileContent = fs.readFileSync(routerFilePath, 'utf8')
+  const routerFileContent = fs.readFileSync(replace_routes_index_jsx_Filepath, 'utf8')
   fs.writeFileSync(routerFilePath, routerFileContent, 'utf8')
   console.log('src/routes/index.jsx文件已替换')
 }
