@@ -925,6 +925,11 @@ json2mq@^0.2.0:
   dependencies:
     string-convert "^0.2.0"
 
+kot-remove-i18n@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/kot-remove-i18n/-/kot-remove-i18n-1.0.2.tgz#189fc83a142181bf5b757b661f1877a50c64249c"
+  integrity sha512-5bEI1cyMRRnnbf08+VVDK4ELKeIB7vrbM3by21PwZVByixCGd6u0OlvT1kjwqgC6VdoO1B19RDj7av22WjLrEw==
+
 lilconfig@^2.0.5, lilconfig@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmmirror.com/lilconfig/-/lilconfig-2.1.0.tgz#78e23ac89ebb7e1bfbf25b18043de756548e7f52"
