@@ -1,24 +1,32 @@
 const fs = require('fs');
 const path = require('path');
 
-
-const replace_Second_FilePath = path.resolve(__dirname, './replace/replace_Second.jsx');
 const Second_Filepath = path.resolve(__dirname, '../../src/Second.jsx');
+const replace_routes_index_jsx_Filepath = path.resolve(__dirname, '../../src/replace_routes_index_jsx.jsx');
+const replace_Home_jsx_Filepath = path.resolve(__dirname, '../../src/replace_Home.jsx');
 
 const routerFilePath = path.resolve(__dirname, '../../src/routes/index.jsx');
+const homeFilePath = path.resolve(__dirname, '../../src/components/Home.jsx');
 
-function replace_default_page () {
-  let replace_Second_FileContent = fs.readFileSync(replace_Second_FilePath, 'utf8')
-  Second_Filepath && fs.writeFileSync(Second_Filepath, replace_Second_FileContent, 'utf8');
-  console.log('Second.jsx 已替换')
+function removeSecondFile () {
+  fs.existsSync(Second_Filepath) && fs.unlinkSync(Second_Filepath)
+  console.log('src/view/Second.jsx文件已删除')
 }
 
-
-// (fs.existsSync(replace_Second_FilePath) && fs.existsSync(Second_Filepath)) && replace_default_page()
-
-function replace_route_index_jsx (params) {
+function replace_route_index_jsx () {
+  if (!fs.existsSync(routerFilePath) || !fs.existsSync(replace_routes_index_jsx_Filepath)) return
   const routerFileContent = fs.readFileSync(routerFilePath, 'utf8')
-  console.log(routerFileContent)
+  fs.writeFileSync(routerFilePath, routerFileContent, 'utf8')
+  console.log('src/routes/index.jsx文件已替换')
 }
 
-fs.existsSync(routerFilePath) && replace_route_index_jsx()
+function replace_home_jsx () {
+  if (!fs.existsSync(homeFilePath) || !fs.existsSync(replace_Home_jsx_Filepath)) return
+  const HomeFileContent = fs.readFileSync(replace_Home_jsx_Filepath, 'utf8')
+  fs.writeFileSync(homeFilePath, HomeFileContent, 'utf8')
+  console.log('src/components/Home.jsx文件已替换')
+}
+
+removeSecondFile()
+replace_route_index_jsx()
+replace_home_jsx()
