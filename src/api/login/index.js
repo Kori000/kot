@@ -1,4 +1,4 @@
-import useRequest from '../../utils/useRequest';
+import useRequest from '../../hooks/useRequest';
 
 const { request } = useRequest();
 

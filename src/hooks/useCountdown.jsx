@@ -1,7 +1,6 @@
 /**
 @desc  
   Custom hook to calculate the countdown to a given date.
-
 @usage
   const countdown = useCountdown('2023-10-01T00:00:00');
   console.log(countdown);
@@ -9,7 +8,7 @@
   <div>{countdown.hours}</div>
   <div>{countdown.minutes}</div>
   <div>{countdown.seconds}</div>
-*/
+  */
 
 import { useEffect, useState } from 'react';
 

@@ -1,6 +1,19 @@
+/**
+ * @desc
+ * Monitor defined viewport width and height, if viewport width is less than minwidth and viewport height is less than minheight, return true.
+ * @usage
+ * const isNeedMini = useMonitor(768, 1024);
+ * if (isNeedMini) {
+ *  // do something
+ * }
+ * @param {number} minheight
+ * @param {number} minwidth
+ * @returns {boolean}
+ */
+
 import React, { useState, useEffect } from 'react';
 
-function ChangeSize(minheight, minwidth) {
+export default function useMonitor(minheight, minwidth) {
   if (minheight === undefined || minwidth === undefined) {
     throw new Error('minheight or minwidth is undefined');
   }
@@ -23,4 +36,3 @@ function ChangeSize(minheight, minwidth) {
 
   return isNeedMini;
 }
-export default ChangeSize;

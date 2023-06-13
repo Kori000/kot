@@ -2,12 +2,9 @@ import React from 'react';
 import useKot from '../context/useKot';
 import { ice } from '../assets/image';
 import { Button } from 'antd';
-import useCountdown from '../utils/useCountdown';
 
 import { useTranslation } from 'react-i18next';
 const Second = () => {
-  const countdown = useCountdown('2023-10-01T00:00:00');
-
   const { t } = useTranslation();
   const { goToHome } = useKot();
   return (
