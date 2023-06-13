@@ -1,6 +1,6 @@
-# Kot
+# kot
 
-👀 [中文文档](https://github.com/Kori000/Kot/blob/main/README_Zh.md)
+👀 [中文文档](https://github.com/Kori000/kot/blob/main/README_Zh.md)
 
 <div align="left">
 
@@ -12,10 +12,10 @@
 
 ```bash
 # clone the project
-git clone https://github.com/Kori000/Kot.git
+git clone https://github.com/Kori000/kot.git
 
 # enter the project directory
-cd Kot
+cd kot
 
 # install dependency
 yarn
@@ -31,25 +31,25 @@ yarn dev
 3. The created context context provides simple global state management
 4. Utils has been created with simple tools built in:
 
-   - [Check whether the browser is Safari](https://github.com/Kori000/Kot/tree/main/src/utils/IsSafari.jsx)
+   - [Check whether the browser is Safari](https://github.com/Kori000/kot/tree/main/src/utils/IsSafari.jsx)
 
-   - [Determine whether the network is China](https://github.com/Kori000/Kot/tree/main/src/utils/IsZh.jsx)
+   - [Determine whether the network is China](https://github.com/Kori000/kot/tree/main/src/utils/IsZh.jsx)
 
-   - [Back To Top](https://github.com/Kori000/Kot/tree/main/src/utils/UpToTop.jsx)
+   - [Back To Top](https://github.com/Kori000/kot/tree/main/src/utils/UpToTop.jsx)
 
-   - [Format the blockchain address](https://github.com/Kori000/Kot/tree/main/src/utils/ShortAddress.jsx)
+   - [Format the blockchain address](https://github.com/Kori000/kot/tree/main/src/utils/ShortAddress.jsx)
 
 5. Hooks has been created:
 
-   - [Count down](https://github.com/Kori000/Kot/tree/main/src/hooks/useCountdown.jsx)
+   - [Count down](https://github.com/Kori000/kot/tree/main/src/hooks/useCountdown.jsx)
 
-   - [Checks whether the viewport is smaller than the specified width](https://github.com/Kori000/Kot/tree/main/src/hooks/useLessWidth.jsx)
+   - [Checks whether the viewport is smaller than the specified width](https://github.com/Kori000/kot/tree/main/src/hooks/useLessWidth.jsx)
 
-   - [Determines whether the viewport is smaller than both the specified width and height](https://github.com/Kori000/Kot/tree/main/src/hooks/useMonitor.jsx)
+   - [Determines whether the viewport is smaller than both the specified width and height](https://github.com/Kori000/kot/tree/main/src/hooks/useMonitor.jsx)
 
-   - [Axios Network requester](https://github.com/Kori000/Kot/tree/main/src/hooks/useRequest.jsx)
+   - [Axios Network requester](https://github.com/Kori000/kot/tree/main/src/hooks/useRequest.jsx)
 
-   - [Customize antdMessage popup](https://github.com/Kori000/Kot/tree/main/src/hooks/useAntdCustomMessage.jsx)
+   - [Customize antdMessage popup](https://github.com/Kori000/kot/tree/main/src/hooks/useAntdCustomMessage.jsx)
 
 6. Created BANPage: A message is displayed indicating that the current region is not accessible
 7. The default font and basic configuration of tailwindcss have been configured
