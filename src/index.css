@@ -1,5 +1,24 @@
 @tailwind base;
 
+@layer base {
+
+  /* 隐藏滚动条 */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  @font-face {
+    font-family: "Alata";
+    src: url(./assets/font/Alata-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url(./assets/font/Inter.ttf);
+  }
+
+}
+
 @tailwind components;
 @tailwind utilities;
 

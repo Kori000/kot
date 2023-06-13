@@ -2,6 +2,7 @@ import { useRoutes } from 'react-router-dom';
 import MainPage from '../view/MainPage';
 import Second from '../view/Second';
 import BANPage from '../view/BANPage';
+import NotFoundPage from '../view/404Page';
 
 const routes = [
   {
@@ -15,6 +16,10 @@ const routes = [
   {
     path: '/ban',
     element: <BANPage />
+  },
+  {
+    path: '*',
+    element: <NotFoundPage />
   }
 ];
 

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const BANPage = () => {
+const NotFoundPage = () => {
   return (
     <div className='w-full h-screen bg-black flex justify-center items-center xl:text-3xl sm:text-2xl text-xl text-white font-Alata '>
-      Sorry, not supported in your area.
+      404 Not Found
     </div>
   );
 };
 
-export default BANPage;
+export default NotFoundPage;
