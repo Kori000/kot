@@ -1,12 +1,7 @@
-# kot
+# Kot
 
 🌏 [English](https://github.com/Kori000/kot/blob/main/README.md)
 
-<div align="left">
-
-[![npm version](https://img.shields.io/npm/v/kot-remove-i18n.svg?style=flat-square/)](https://www.npmjs.org/package/kot-remove-i18n)
-
-</div>
 ## 快速开始
 
 ```bash
@@ -56,3 +51,9 @@ yarn dev
 9. 已配置 viteconfig
 10. 已配置 404 页面
 11. 已集成 国际化配置
+
+- 可以在项目初期 执行 **remove-i18n** 命令移除 国际化
+
+```bash
+yarn remove-i18n
+```

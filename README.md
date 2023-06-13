@@ -1,12 +1,6 @@
-# kot
+# Kot
 
 👀 [中文文档](https://github.com/Kori000/kot/blob/main/README_Zh.md)
-
-<div align="left">
-
-[![npm version](https://img.shields.io/npm/v/kot-remove-i18n.svg?style=flat-square)](https://www.npmjs.org/package/kot-remove-i18n)
-
-</div>
 
 ## Getting started
 
@@ -57,3 +51,9 @@ yarn dev
 9. The viteconfig has been configured
 10. The 404Page has been configured
 11. The i18n has been configured
+
+- You can remove the internationalization configuration early in the project by executing the **remove-i18n** command
+
+```bash
+yarn remove-i18n
+```
