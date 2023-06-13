@@ -1,0 +1,19 @@
+/* antd message style */
+.ant-message-notice .ant-message-notice-content {
+  color: #E2E8F0;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #1a1a1a !important;
+}
+
+.ant-message-custom-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-tooltip-inner {
+  width: 207px;
+  padding: 12px 16px !important;
+}

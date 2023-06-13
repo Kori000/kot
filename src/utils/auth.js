@@ -1,4 +1,4 @@
-const TokenKey = 'AW-Token';
+const TokenKey = 'Kot-Token';
 
 export function getToken() {
   return localStorage.getItem(TokenKey);

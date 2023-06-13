@@ -1,0 +1,13 @@
+.popup-animate {
+  animation: PopupAnimate 0.25s ease-out;
+}
+
+@keyframes PopupAnimate {
+  0% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

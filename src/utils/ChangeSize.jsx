@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function ChangeSize() {
+export default function ChangeSize() {
   const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
@@ -20,4 +20,3 @@ function ChangeSize() {
 
   return isNeedMini;
 }
-export default ChangeSize;

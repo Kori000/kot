@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function IsLess480() {
+export default function IsLess480() {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -18,4 +18,3 @@ function IsLess480() {
 
   return elementWidth;
 }
-export default IsLess480;

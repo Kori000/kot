@@ -1,0 +1,18 @@
+.img-no-select,
+img {
+  -webkit-user-drag: none;
+  /* 禁止webkit浏览器拖拽图片 */
+  -moz-user-drag: none;
+  /* 禁止Firefox浏览器拖拽图片 */
+  -ms-user-drag: none;
+  /* 禁止IE浏览器拖拽图片 */
+
+  -webkit-user-select: none;
+  /* 禁止webkit浏览器选中图片 */
+  -moz-user-select: none;
+  /* 禁止Firefox浏览器选中图片 */
+  -ms-user-select: none;
+  /* 禁止IE浏览器选中图片 */
+  user-select: none;
+  /* 其他浏览器选中图片 */
+}

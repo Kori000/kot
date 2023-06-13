@@ -1,5 +1,5 @@
 // 是否是中国, 是的话跳转到 /Kot/ban
-const IsZh = async () => {
+export default async function IsZh() {
   const res = await fetch('https://www.cloudflare.com/cdn-cgi/trace', {
     method: 'GET'
   });
@@ -17,6 +17,4 @@ const IsZh = async () => {
   } else {
     console.log('未找到 loc 值');
   }
-};
-
-export default IsZh;
+}
