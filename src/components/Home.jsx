@@ -3,6 +3,7 @@ import useKot from '../context/useKot';
 import { ice } from '../assets/image';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'antd';
+
 const Home = () => {
   const { t, i18n } = useTranslation();
   const { number, setNumber, goToSecond } = useKot();
@@ -13,6 +14,7 @@ const Home = () => {
         alt=''
         className='w-[10%]'
       />
+
       <p>{t('hellow')}~ Kot-React</p>
       <div className='flex items-center justify-center gap-5 '>
         <Button
