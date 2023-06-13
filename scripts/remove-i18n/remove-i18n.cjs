@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const i18nFilePath = path.resolve(__dirname, '../../src/i18n.js');
+
 const mainFilePath = path.resolve(__dirname, '../../src/main.jsx');
 
 
@@ -17,8 +18,8 @@ function remove_i18n_js () {
   console.log('i18n.js 已删除')
 }
 
-mainFilePath && removeImportStatement_main_jsx()
-i18nFilePath && remove_i18n_js()
+fs.existsSync(mainFilePath) && removeImportStatement_main_jsx()
+fs.existsSync(i18nFilePath) && remove_i18n_js()
 
 
 

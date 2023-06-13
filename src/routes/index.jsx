@@ -25,7 +25,6 @@ const routes = [
 
 const Routes = () => {
   return useRoutes(routes);
-  // return <KotProvider>{useRoutes(routes)}</KotProvider>;
 };
 
 export default Routes;
